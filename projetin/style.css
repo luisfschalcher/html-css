@@ -123,10 +123,6 @@ blockquote {
     color: var(--rosaforte);
     text-align: justify;
 }
-.hover_teste {
-    height: 25px;
-    width: 214px;
-}
 .hover_teste > p {
     display: none;
 }
