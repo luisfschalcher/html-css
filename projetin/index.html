@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="midia/favicon.ico" type="image/x-icon">
+    <title>Projetin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quem sou eu?</h1>
+        <div class="perfil">
+            <picture>
+                <source media="(max-width: 550px)" srcset="midia/NinjaDragon_300x300.jpg" type="image/jpg" alt="Ninja Dragon">
+                <img src="midia/NinjaDragon_500x500.jpg" alt="Ninja Dragon">
+            </picture>
+        </div>
+    </header>
+    <p>Me chamo Luis Felipe, mas tenho perfis online que uso para postar desenhos ou outras coisas, nos quais eu uso o nome artístico de Ninja Dragon, abaixo há uma lista com links para minhas redes sociais:</p>
+    <nav>
+        <ul>
+            <li><a href="https://www.instagram.com/ninja_dragon/" target="_blank" rel="external">Instagram</a></li>
+            <li><a href="https://x.com/ninj4dr4gon" target="_blank" rel="external">X</a></li>
+            <li><a href="https://www.youtube.com/@ninjadragon4137" target="_blank" rel="external">YouTube</a></li>
+        </ul>
+    </nav>
+    <p>Também mixo músicas (única e exclusivamente na zuera), abaixo tem um exemplo:</p>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/Descobridor_By_Glamour.mp3" type="audio/mpeg">
+    </audio>
+    <p>Como a ideia dessa página é sintetizar tudo o que eu aprendi até agora, aqui vai uma série de quatro imagens, cada uma te leva para uma aba diferente do projeto:</p>
+    <nav class="imgs_redir">
+        <picture>
+            <a href="pag002.html" target="_self" rel="next"> <img src="midia/NinjaDragon_300x300.jpg" width="300" alt="Ninja Dragon"> </a>
+        </picture>
+        <picture>
+            <a href="pag003.html" target="_self" rel="next"> <img src="midia/Hyehehe_300x300.jpg" width="300" alt="Hyehehe"> </a>
+        </picture>
+        <picture>
+            <a href="pag004.html" target="_self" rel="next"> <img src="midia/Vax_Trinket_300x300.jpg" width="300" alt="Vax e Trinket"> </a>
+        </picture>
+        <picture>
+            <a href="pag005.html" target="_self" rel="next"> <img src="midia/Vex_300x300.jpg" width="300" alt="Vex"> </a>
+        </picture>
+    </nav>
+    <p>E, abaixo, tem uma série de coisas que aprendi a fazer usando HTML e CSS</p>
+    <main>
+        <section id="emojis">
+            <h2>Emojis</h2>
+            <p>&#x1FAE1; &#x1F913;</p>
+        </section>
+        <section id="formatacoes">
+            <h2>Formatações</h2>
+            <h3>Alguns dos termos abaixo podem não exibir nada de diferente, mas há tags semânticas neles</h3>
+            <p><strong>Termo em destaque</strong></p>
+            <p><em>Termo em ênfase</em></p>
+            <p><mark>Texto marcado</mark></p>
+            <p><del>Texto excluído</del></p>
+            <p><ins>Texto inserido</ins> (pra sinalizar algo que foi inserido posteriormente, por exemplo)</p>
+            <p>x<sup>2</sup>+3 (Texto sobrescrito)</p>
+            <p>h<sub>2</sub>o (Texto subscrito)</p>
+            <pre><code>
+        num = int(input())
+        if num%2 == 0:
+            print("par")
+        else:
+            print("impar")
+            </code></pre>
+            <p>Citação: <q>Sei lá, imagina que alguém citou alguma coisa aqui.</q></p>
+            <p>
+            <blockquote cite="Ninja Dragon">
+        Isso aqui deveria ser uma citação completa, mas eu não vi tanta utilidade.
+            </blockquote>
+            </p>
+            <p>Abreviação: passe o mouse sobre a palavra <abbr title="estou">"tô"</abbr>.</p>
+            <p><bdo dir="rtl">Texto invertido</bdo></p>
+        </section>
+        <section id="outros">
+            <h2>Outras coisas</h2>
+            <div class="hover_teste">
+                Passe o mouse aqui
+                <p>Achou!</p>
+            </div>
+            <p>Placeholder</p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            Feito por Luis Felipe Schalcher de Oliveira
+        </p>
+    </footer>
+</body>
+</html>

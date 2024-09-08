@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'minecraft';
+            src: url('fontes/MINECRAFT PE.ttf') format(truetype)/*, url...*/;
+            font-weight: bold;
+            font-style: normal;
+        }
+        /*
+        geralmente:
+        opentype-otf
+        truetype-ttf
+        tbm tem:
+        embedded-opentype
+        truetype-aat
+        svg
+        */
+        body {
+            font-family: 'minecraft', Courier, monospace;
+            font-weight: bold;
+            background-color: aqua;
+        }
+        h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum reprehenderit, in iusto animi quas unde omnis a minus, consequatur maxime voluptatum nam debitis nisi quo repellendus. Quos maiores ut dolorum.
+    </p>
+</body>
+</html>
