@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+body {
+    height: 98vh;
+    border: 1px dashed black;
+    background-image: url('imagens/Vikavolt.png');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+div.quadrado {
+    display: inline-block;
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+div.bloco {
+    height: 200px;
+    border: 1px solid black;
+    margin: 10px;
+    border-radius: 20px;
+    background-image: url('imagens/Vikavolt.png');
+    background-repeat: no-repeat;
+}
+
+div#q1 {
+    background-image: url('imagens/SpiderMan.png');
+}
+
+div#q01 {
+    background-position: left top;
+}
+div#q02 {
+    background-position: left center;
+}
+div#q03 {
+    background-position: right bottom;
+}
+div#q04 {
+    background-position: center center;
+}
+
+h1 {
+    background-color: black;
+    color: rgb(255, 0, 0);
+}
