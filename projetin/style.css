@@ -163,12 +163,12 @@ section.img > p {
     padding: 15px;
 }
 #img1 {
-    background-image: url('../exercs/ex022\ \(imagens\ de\ fundo\)/imagens/SpiderMan.png');
+    background-image: url('midia/SpiderMan.png');
     background-position: center center;
 }
 
 #img2 {
-    background-image: url('../exercs/ex022\ \(imagens\ de\ fundo\)/imagens/Vikavolt.png');
+    background-image: url('midia/Vikavolt.png');
     background-position: center center;
 }
 footer > p{
