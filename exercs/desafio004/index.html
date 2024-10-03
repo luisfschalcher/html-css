@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        thead {
+            background-color: gray;
+            color: white;
+        }
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            background-color: gray;
+            color: white;
+        }
+        .cdisciplinas {
+            background-color: aqua;
+        }
+        .cnotas {
+            background-color: blue;
+            color: white;
+        }
+        #container {
+            width: 50vw;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <table>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td rowspan="2">3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td colspan="3">8</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td rowspan="2">10</td>
+                <td colspan="2">11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <br>
+
+
+
+    <div id="container">
+        <table>
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>H</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td colspan="4">M</td>
+            </tr>
+        </table>
+    </div>
+
+
+
+    <br>
+
+
+
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th colspan="3" scope="colgroup">Filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Mulheres</th>
+                    <td>Maria</td>
+                    <td>Star Wars</td>
+                    <td>Star Trek</td>
+                    <td>Alien</td>
+                </tr>
+                <tr>
+                    <td>Fernanda</td>
+                    <td>Homem de Ferro</td>
+                    <td>Hulk</td>
+                    <td>Thor</td>
+                </tr>
+                <tr>
+                    <td>Nathália</td>
+                    <td>Capitão América</td>
+                    <td>Vingadores</td>
+                    <td>Homem-Formiga</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup">Homens</th>
+                    <td>Luis</td>
+                    <td>Guardiões da Galáxia</td>
+                    <td>Dr. Estranho</td>
+                    <td>Pantera Negra</td>
+                </tr>
+                <tr>
+                    <td>Felipe</td>
+                    <td>Capitã Marvel</td>
+                    <td>Viúva Negra</td>
+                    <td>Shang-Chi</td>
+                </tr>
+                <tr>
+                    <td>Fernando</td>
+                    <td>Eternos</td>
+                    <td>Homem-Aranha</td>
+                    <td>Deadpool</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <br>
+
+
+
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="carea">
+                <col class="cdisciplinas">
+                <col class="cnotas" span="2">
+                <col class="cmedia">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th rowspan="2" scope="col">Área</th>
+                    <th rowspan="2" scope="col">Disciplinas</th>
+                    <th colspan="2" scope="colgroup">Notas</th>
+                    <th rowspan="2" scope="col">Média</th>
+                </tr>
+                <tr>
+                    <th scope="col">Nota 1</th>
+                    <th scope="col">Nota 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="5" scope="rowgroup" style="background-color: white; color: black;">Exatas</th>
+                </tr>
+                <tr>
+                    <td>Matemática</td>
+                    <td class="cnotas">0</td>
+                    <td class="cnotas">0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Física</td>
+                    <td class="cnotas">0</td>
+                    <td class="cnotas">0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Química</td>
+                    <td class="cnotas">0</td>
+                    <td class="cnotas">0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Biologia</td>
+                    <td class="cnotas">0</td>
+                    <td class="cnotas">0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row">Média de exatas</th>
+                    <td style="background-color: gray; color: white; font-weight: bold;">0</td>
+                </tr>
+                <tr>
+                    <th rowspan="3" scope="rowgroup" style="background-color: white; color: black;">Humanas</th>
+                </tr>
+                <tr>
+                    <td>História</td>
+                    <td class="cnotas">0</td>
+                    <td class="cnotas">0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>Geografia</td>
+                    <td class="cnotas">0</td>
+                    <td class="cnotas">0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <th colspan="4" scope="row" >Média de humanas</th>
+                    <td style="background-color: gray; color: white; font-weight: bold;">0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
