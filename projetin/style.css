@@ -8,6 +8,7 @@
     --rosaforte: rgb(255, 0, 234);
     --rosaescuro: rgb(136, 0, 125);
     --sombra: rgba(0, 0, 0, 0.685);
+    --cinza: rgb(150, 150, 150);
 }
 
 * {
@@ -173,4 +174,21 @@ section.img > p {
 }
 footer > p{
     text-align: right;
+}
+
+#botao_click {
+    background-color: var(--rosaforte);
+    border-radius: 18px;
+    padding: 10px;
+    display: table;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#botao_click > a {
+    color: white;
+}
+
+#botao_click > a:hover {
+    color: var(--cinza);
 }
