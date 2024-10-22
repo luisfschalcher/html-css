@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            background-color: aqua;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: rgb(173, 91, 250);
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+
+        #cxA {
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+
+        #cxB {
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        #cxC {
+            flex-shrink: 8;
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">Bababoi</div>
+        <div class="item" id="cxC">CachorradaCachorradaCachorradaCachorradaCachorradaCachorradaCachorrada Cachorrada</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

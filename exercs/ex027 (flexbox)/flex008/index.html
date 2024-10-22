@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            background-color: aqua;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .item {
+            background-color: rgb(173, 91, 250);
+            border: 1px solid black;
+            text-align: center;
+            padding: 2px;
+        }
+
+        #cxA {
+            flex: 0 1 auto /* == flex: initial*/
+        }
+
+        #cxB {
+            flex: 0 0 auto; /* == flex: none*/
+        }
+
+        #cxC {
+            flex: 1 1 auto; /* == flex: auto*/
+        }
+
+        #cxD {
+            /*ex aleatorio*/ flex: 3 1 auto; /* == flex: 3*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">Bababoi</div>
+        <div class="item" id="cxC">CachorradaCachorradaCachorradaCachorradaCachorradaCachorrada Cachorrada</div>
+        <div class="item" id="cxD">D</div>
+    </div>
+</body>
+</html>
