@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página do professor</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
     <style>
 
         * {
@@ -73,6 +74,12 @@
             cursor: pointer;
         }
 
+        #seta_dir {
+            position: relative;
+            right: -275px;
+            top: 4px;
+        }
+
     </style>
 
 </head>
@@ -82,7 +89,9 @@
         <h1>Página do professor</h1>
         <h2>Dados dos alunos</h2>
         <div class="opcao" onclick="clickMenu()">
-            Todos os alunos
+            Todos os alunos <span class="material-symbols-outlined" id="seta">
+                arrow_right
+                </span>
         </div>
         <menu id="itens">
             <table>
@@ -137,6 +146,12 @@
                     itens.style.display = 'none'
                 } else {
                     itens.style.display = 'block'
+                }
+
+                if (seta.style.display == 'arrow_right') {
+                    seta.style.display = 'arrow_drop_down'
+                } else {
+                    seta.style.display = 'arrow_right'
                 }
             }
         </script>
