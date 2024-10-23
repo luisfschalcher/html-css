@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 68, 255), rgb(47, 0, 255), rgb(37, 0, 138));
+}
+
+h1 {
+    color: aqua;
+    font-size: 48px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px;
+    padding: 3px;
+}
+
+h2 {
+    color: aqua;
+    font-size: 32px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px;
+}
+
+.opcao {
+    color: aqua;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    width: 35vw;
+}
+
+#dados {
+    display: none;
+}
+
+table {
+    width: 35vw;
+    border-collapse: collapse;
+    position: relative;
+}
+
+td, th {
+    border: 2px solid black;
+    padding: 12px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+thead, tfoot {
+    color: white;
+}
+
+thead > tr >th {
+    position: sticky;
+    top: -1px;
+}
+
+tbody > tr:nth-child(2n){
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.opcao:hover {
+    cursor: pointer;
+}
+
+#seta {
+    position: relative;
+    right: -275px;
+    top: 4px;
+}
+
+#turmas {
+    display: none;
+}
+
+#t20232 {
+    display: none;
+}
