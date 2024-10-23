@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do professor</title>
+    <style>
+
+        * {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: linear-gradient(to right, rgb(0, 68, 255), rgb(47, 0, 255), rgb(37, 0, 138));
+        }
+
+        h1 {
+            color: aqua;
+            font-size: 48px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 0px;
+            padding: 3px;
+        }
+
+        h2 {
+            color: aqua;
+            font-size: 32px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 4px;
+        }
+
+        .opcao {
+            color: aqua;
+            font-size: 25px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 5px;
+            width: 35vw;
+        }
+
+        #itens {
+            display: none;
+        }
+
+        table {
+            width: 35vw;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 2px solid black;
+            padding: 12px;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+        thead, tfoot {
+            color: white;
+        }
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .opcao:hover {
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+        <h1>Página do professor</h1>
+        <h2>Dados dos alunos</h2>
+        <div class="opcao" onclick="clickMenu()">
+            Todos os alunos
+        </div>
+        <menu id="itens">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Matrícula</th>
+                        <th scope="col">Turma</th>
+                        <th scope="col">E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Luis Felipe</td>
+                        <td>2023</td>
+                        <td>2023.1</td>
+                        <td>email@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Ádilla</td>
+                        <td>2024</td>
+                        <td>2024.1</td>
+                        <td>email@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Carlos Salles</td>
+                        <td>1995</td>
+                        <td>1995.1</td>
+                        <td>email@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Sávio Patrick</td>
+                        <td>2022</td>
+                        <td>2022.2</td>
+                        <td>email@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Will</td>
+                        <td>2022</td>
+                        <td>2022.2</td>
+                        <td>email@email.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </menu>
+
+
+
+        <script>
+            function clickMenu() {
+                if (itens.style.display == 'block') {
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+        </script>
+
+</body>
+</html>
